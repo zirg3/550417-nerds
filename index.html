@@ -42,26 +42,33 @@
         <a class="button" href="more-info">Узнать больше</a>
         <img src="img/slide3.png" width="759" height="411" alt="слайд">
       </div>
-      <div class="slider-buttons"></div>
+      <div class="slider-buttons">
+        <input class="visually-hidden" type="radio" id="slide-1" name="slide-button" checked>
+        <label class="slider-buttons slide-1" for="slide-1"></label>
+        <input class="visually-hidden" type="radio" id="slide-2" name="slide-button">
+        <label class="slider-buttons slide-2" for="slide-2"></label>
+        <input class="visually-hidden" type="radio" id="slide-3" name="slide-button">
+        <label class="slider-buttons slide-3" for="slide-3"></label>
+      </div>
     </section>
     <div class="content">
-      <section class="web-site">
+      <section class="web-site-slide">
         <img src="img/illustration-1.png" width="300" height="146" alt="сайты">
         <h3>ВЕБ-САЙТЫ</h3>
         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-        <a class="button" href="order.html">Заказать</a>
+        <a class="button" href="#">Заказать</a>
       </section>
-      <section class="application">
+      <section class="application-slide">
         <img src="img/illustration-2.png" width="300" height="146" alt="приложения">
         <h3>ПРИЛОЖЕНИЯ</h3>
         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a class="button" href="order.html">Заказать</a>
+        <a class="button" href="#">Заказать</a>
       </section>
-      <section class="presentation">
+      <section class="presentation-slide">
         <img src="img/illustration-3.png" width="300" height="146" alt="презентации">
         <h3>ПРЕЗЕНТАЦИИ</h3>
         <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
-        <a class="button" href="order.html">Заказать</a>
+        <a class="button" href="#">Заказать</a>
       </section>
     </div>
     <section class="about-us">
@@ -80,9 +87,9 @@
         <p>с 2004 года любим точность во всем:</p>
         <table>
           <tr>
-            <td><b>146%</b></td>
-            <td><b>100%</b></td>
-            <td><b>50%</b></td>
+            <td><b>146</b><sup>%</sup></td>
+            <td><b>100</b><sup>%</sup></td>
+            <td><b>50</b><sup>%</sup></td>
           </tr>
           <tr>
             <th>уровень самоотдачи</th>
@@ -135,17 +142,17 @@
         <li>
           <a class="social-button" href="#">
             <img src="img/vk-icon.svg" width="26" height="15" alt="вконтакте">
-          Вконтакте</a>
+          </a>
         </li>
         <li>
           <a class="social-button" href="#">
             <img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук">
-          Фейсбук</a>
+          </a>
         </li>
         <li>
           <a class="social-button" href="#">
             <img src="img/insta-icon.svg" width="21" height="21" alt="инстаграм">
-            Инстаграм</a>
+          </a>
         </li>
       </ul>
     </div>
@@ -154,6 +161,26 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <section class="modal modal-message" >
+    <h3>Напишите нам</h3>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="information">
+        <p class="info-name">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name"  name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="info-email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" id="user-email" name="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="modal-text">
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" rows="6" cols="50" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
