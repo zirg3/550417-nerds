@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,73 +57,77 @@
     <div class="content">
       <section class="web-site-slide">
         <img src="img/illustration-1.png" width="300" height="146" alt="сайты">
-        <h3>ВЕБ-САЙТЫ</h3>
+        <h3>Веб-сайты</h3>
         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-        <a class="button" href="#">Заказать</a>
+        <a class="button-1 order-button" href="#">Заказать</a>
       </section>
       <section class="application-slide">
         <img src="img/illustration-2.png" width="300" height="146" alt="приложения">
-        <h3>ПРИЛОЖЕНИЯ</h3>
+        <h3>Приложения</h3>
         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a class="button" href="#">Заказать</a>
+        <a class="button-2 order-button" href="#">Заказать</a>
       </section>
       <section class="presentation-slide">
         <img src="img/illustration-3.png" width="300" height="146" alt="презентации">
-        <h3>ПРЕЗЕНТАЦИИ</h3>
+        <h3>Презентации</h3>
         <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
-        <a class="button" href="#">Заказать</a>
+        <a class="button-3 order-button" href="#">Заказать</a>
       </section>
     </div>
     <section class="about-us">
-      <div class="about-us-left">
-        <b class="title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p>Исповедуем приципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3 class="development">Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
-      <div class="about-us-right">
-        <img src="img/nerds-illustration.png"  width="360" height="208" alt="логотип">
-        <p>с 2004 года любим точность во всем:</p>
-        <table>
-          <tr>
-            <td><b>146</b><sup>%</sup></td>
-            <td><b>100</b><sup>%</sup></td>
-            <td><b>50</b><sup>%</sup></td>
-          </tr>
-          <tr>
-            <th>уровень самоотдачи</th>
-            <th>соблюдение сроков</th>
-            <th>минимальная предоплата</th>
-          </tr>
-        </table>
+      <div class="services">
+        <div class="about-us-left">
+          <b class="title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем приципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="development">Выполняем заказы на разработку:</h3>
+          <ul class="service-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-us-right">
+          <img src="img/nerds-illustration.png"  width="360" height="208" alt="логотип">
+          <p>с 2004 года любим точность во всем:</p>
+          <table class="about-us-right">
+            <tr>
+              <td><b>146</b><sup>%</sup></td>
+              <td><b>100</b><sup>%</sup></td>
+              <td><b>50</b><sup>%</sup></td>
+            </tr>
+            <tr>
+              <th>Уровень самоотдачи</th>
+              <th>Соблюдение сроков</th>
+              <th>Минимальная предоплата</th>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
     <!-- Логотипы партнеров -->
     <div class="partners">
-      <div class="partners-brand-html">
-        <a class="partners-html" href="#">
-          <img src="img/logo-1.png" width="199" height="68" alt="Партнер">
-        </a>
-      </div>
-      <div class="partners-brand-borodinski">
-        <a class="partners-borodinski"  href="#">
-          <img src="img/logo-2.png" width="209" height="90" alt="Партнер">
-        </a>
-      </div>
-      <div class="partners-brand-pink">
-        <a class="partners-pink"  href="#">
-          <img src="img/logo-3.png" width="185" height="52" alt="Партнер">
-        </a>
-      </div>
-      <div class="partners-brand-mishka">
-        <a class="partners-mishka" href="#">
-          <img src="img/logo-4.png" width="173" height="84" alt="Партнер">
-        </a>
-      </div>
+      <ul class="partners-brand">
+        <li>
+          <a class="partners-html" href="#">
+            <img src="img/logo-1.png" width="199" height="68" alt="Партнер">
+          </a>
+        </li>
+        <li>
+          <a class="partners-borodinski"  href="#">
+            <img src="img/logo-2.png" width="209" height="90" alt="Партнер">
+          </a>
+        </li>
+        <li>
+          <a class="partners-pink"  href="#">
+            <img src="img/logo-3.png" width="185" height="52" alt="Партнер">
+          </a>
+        </li>
+        <li>
+          <a class="partners-mishka" href="#">
+            <img src="img/logo-4.png" width="173" height="84" alt="Партнер">
+          </a>
+        </li>
+      </ul>
     </div>
   </main>
   <footer class="main-footer">
@@ -178,8 +185,9 @@
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" rows="6" cols="50" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="modal-button btn-1" type="submit">Отправить</button>
     </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
