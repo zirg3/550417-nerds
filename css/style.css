@@ -467,11 +467,21 @@ sup {
   font-size: 26px;
 }
 
-.partners li:hover {
+.partners-brand li:not(:nth-child(1))::before{
+  content: '';
+  position: relative;
+  background: #eee;
+  width: 2px;
+  height: 50px;
+  float: left;
+  margin-right: 40px;
+}
+
+.partners a:hover {
   opacity: 1;
 }
 
-.partners-site:active {
+.partners a:active {
   opacity: .1;
 }
 
@@ -485,7 +495,7 @@ sup {
   margin-right: auto;
 }
 
-.partners-brand li {
+.partners-brand a {
   display: block;
   width: 290px;
   opacity: .2;
