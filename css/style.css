@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
-  min-width: 1440px;
+  min-width: 1200px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -46,8 +46,13 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 49px;
-  padding-left: auto;
 }
+ .wrapper{
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+ }
 
 .main-header-logo,
 .site-navigation {
@@ -153,8 +158,6 @@ a {
 	background-repeat: no-repeat;
 	background-position: 430px 10px;
   min-height: 420px;
-  margin-left: 140px;
-  margin-right: 140px;
 }
 
 .sli2 {
@@ -238,8 +241,8 @@ a {
 
 .slider-controls {
   position: absolute;
-  left: 51%;
-  bottom: 47%;
+  left: 50%;
+  bottom: 24%;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -523,7 +526,7 @@ sup {
   display: block;
 	box-sizing: border-box;
 	width: 319px;
-	height: 308px;
+	min-height: 308px;
 	position: absolute;
 	left: 140px;
 	padding-left: 52px;
@@ -645,10 +648,10 @@ sup {
 }
 .box{
   display: flex;
-	width: 100%;
-	align-items: flex-start;
-  margin-top: 60px;
-  margin-left: 140px;
+	max-width: 1160px;
+	align-content: center;
+  padding-top: 60px;
+  margin: auto;
 }
 
 .sorting-box{
@@ -790,9 +793,9 @@ sup {
   padding-bottom: 10px;
 }
 
-input[id=filter-fil1]+label::before,
-input[id=filter-fil2]+label::before,
-input[id=filter-fil3]+label::before {
+.filter-grids+label::before,
+.filter-grids+label::before,
+.filter-grids+label::before {
 	content: "";
 	display: inline-block;
 	width: 25px;
@@ -805,30 +808,30 @@ input[id=filter-fil3]+label::before {
   padding-bottom: 10px;
 }
 
-input[id=filter-fil1]:disabled+label::before,
-input[id=filter-fil2]:disabled+label::before,
-input[id=filter-fil3]:disabled+label::before {
+.filter-grids:disabled+.filter-grids::before,
+.filter-grids:disabled+.filter-grids::before,
+.filter-grids:disabled+.filter-grids::before {
   opacity: .1;
 }
 
-input[id=filter-fil1]+label:hover::before,
-input[id=filter-fil1]:focus+label::before,
-input[id=filter-fil2]+label:hover::before,
-input[id=filter-fil2]:focus+label::before,
-input[id=filter-fil3]+label:hover::before,
-input[id=filter-fil3]:focus+label::before {
+.filter-grids+.filter-grids:hover::before,
+.filter-grids:focus+.filter-grids::before,
+.filter-grids+.filter-grids:hover::before,
+.filter-grids:focus+.filter-grids::before,
+.filter-grids+.filter-grids:hover::before,
+.filter-grids:focus+.filter-grids::before {
 	opacity: 1;
 }
 
-input[id=filter-fil1]:focus+label,
-input[id=filter-fil2]:focus+label,
-input[id=filter-fil3]:focus+label {
+.filter-grids:focus+.filter-grids,
+.filter-grids:focus+.filter-grids,
+.filter-grids:focus+.filter-grids {
 	color: #000;
 }
 
-input[id=filter-fil1]:checked+label::before,
-input[id=filter-fil2]:checked+label::before,
-input[id=filter-fil3]:checked+label::before {
+.filter-grids:checked+.filter-grids::before,
+.filter-grids:checked+.filter-grids::before,
+.filter-grids:checked+.filter-grids::before {
 	background: url(../img/radio-on.svg)  no-repeat;
 }
 
@@ -836,7 +839,7 @@ input[id=filter-fil3]:checked+label::before {
   padding-top: 25px;
 }
 
-input[type=checkbox]+label::before {
+.features-1+.features-1::before {
 	display: inline-block;
 	content: "";
 	width: 27px;
@@ -849,16 +852,16 @@ input[type=checkbox]+label::before {
   padding-bottom: 10px;
 }
 
-input[type=checkbox]+label:hover::before,
-input[type=checkbox]:focus+label::before {
+.features-1+.features-1:hover::before,
+.features-1:focus+.features-1::before {
 	opacity: 1;
 }
 
-input[type=checkbox]:checked+label::before {
+.features-1:checked+.features-1::before {
 	background: url(../img/checkbox-on.svg)  no-repeat;
 }
 
-input[type=checkbox]:disabled+label::before {
+.features-1:disabled+.features-1::before {
 	opacity: .1;
 }
 
@@ -981,16 +984,16 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .up-down a {
-  color: #000
+  color: #000;
 }
 
 .up-down a {
-  opacity: .3;
+  opacity: .2;
 }
 
 .up-down a:focus,
 .up-down a:hover {
-  opacity: .6;
+  opacity: 1;
 }
 
 .up-down .active-1 {
@@ -1059,7 +1062,7 @@ input[type=checkbox]:disabled+label::before {
 .item-name,
 .catalog-item::before {
 	display: block;
-	box-sizing: border;
+	box-sizing: border-box;
 }
 
 .catalog-item-price{
