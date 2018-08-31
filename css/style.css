@@ -182,10 +182,6 @@ a {
   margin: 0;
 }
 
-.container1 {
-  margin: 0 auto;
-  box-sizing: border-box;
-}
 .slider-slide p {
   color: #283136;
   max-width: 430px;
@@ -335,17 +331,26 @@ a {
   box-shadow: 0 3px rgba(0, 0, 0, .1) inset;
   color: rgba(255, 255, 255, .3);
 }
+.web-site-slide{
+  margin-right: 100px;
+}
+
+.application-slide{
+  margin-right: 100px;
+}
+
+.presentation-slide{
+  margin-right: 100px;
+}
 
 .content {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1160px;
+  width: 1160px;
   min-height: 430px;
   margin-top: 80px;
-  justify-content: space-between;
 	border-bottom:2px solid #eeeeee;
-
 }
 
 .order-button {
@@ -353,7 +358,6 @@ a {
   margin-top: 30px;
   padding: 15px 0;
   color: #fff;
-  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
   position: absolute;
@@ -490,7 +494,7 @@ sup {
 
 .partners-brand {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 1160px;
   padding-left: 0;
   align-items: center;
@@ -511,18 +515,25 @@ sup {
   color: #666666;
 }
 /* карта */
-.map{
+.map {
   display: block;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  min-width: 100%;
+  min-width: 1200px;
+  width: 100%;
   min-height: 416px;
 }
+
+.map img {
+  width: 100%;
+ }
+
 .maps{
 
 }
-.footer-contact{
+
+.footer-contact {
   display: block;
 	box-sizing: border-box;
 	width: 319px;
