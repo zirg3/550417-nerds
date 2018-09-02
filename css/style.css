@@ -469,12 +469,12 @@ sup {
 
 .partners-brand li:not(:nth-child(1))::before{
   content: '';
-  position: relative;
+  position: absolute;
   background: #eee;
   width: 2px;
   height: 50px;
-  float: left;
-  margin-right: 40px;
+  left: -20px;
+  top: 20px;
 }
 
 .partners a:hover {
@@ -496,10 +496,12 @@ sup {
 }
 
 .partners-brand a {
-  display: block;
-  width: 290px;
+  display: flex;
+  width: 100%;
   opacity: .2;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .partners-brand {
@@ -507,11 +509,26 @@ sup {
   flex-wrap: wrap;
   width: 1160px;
   padding-left: 0;
-  align-items: center;
+  justify-content: space-between;
   list-style: none;
   padding-top: 30px;
 }
+
+.partners-brand li{
+  width: 260px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 /* контакты */
+.contacts{
+  width: 1160px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contacts h3 {
   font-size: 18px;
   line-height: 30px;
@@ -537,6 +554,10 @@ sup {
 
 .map img {
   width: 100%;
+  max-width: 1440px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
  }
 
 .maps{
@@ -549,11 +570,11 @@ sup {
 	width: 319px;
 	min-height: 308px;
 	position: absolute;
-	left: 140px;
+	left: 0;
 	padding-left: 52px;
 	padding-top: 48px;
 	padding-bottom: 40px;
-	top: 54px;
+	bottom: 54px;
 	background-color: #fff;
 }
 
@@ -1004,20 +1025,24 @@ sup {
   opacity: 1;
 }
 
-.up-down a {
-  color: #000;
-}
-
-.up-down a {
+.up-down svg path {
+  fill: #a6a6a6;
   opacity: .2;
 }
 
-.up-down a:focus,
-.up-down a:hover {
+.up-down svg:focus path,
+.up-down svg:hover path{
+  fill: #a6a6a6;
   opacity: 1;
 }
 
-.up-down .active-1 {
+.up-down svg:active path{
+  fill: #000;
+  opacity: 1;
+}
+
+.active-1 svg path{
+  fill: #000;
   opacity: 1;
 }
 
@@ -1086,7 +1111,12 @@ sup {
 	box-sizing: border-box;
 }
 
+.catalog-item:hover .catalog-item-price{
+  opacity: 1;
+}
+
 .catalog-item-price{
+  transition: opacity .3s;
   background: #eee;
 	opacity: 0;
 	width: 360px;
@@ -1103,9 +1133,6 @@ sup {
 	padding-top: 30px;
 }
 
-.catalog-item-price:hover {
-	opacity: 1;
-}
 
 .btn-price1 {
   background-color: #fb565a;
