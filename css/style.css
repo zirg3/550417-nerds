@@ -64,10 +64,11 @@ body {
   width: 820px;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 28px;
-  padding-left: 200px;
+  margin-top: 26px;
+  padding-left: 204px;
   list-style: none;
   min-height: 52px;
+  margin-bottom: 0px;
 }
 
 .site-navigation a {
@@ -156,7 +157,7 @@ a {
 .sli3{
   background-image: url(../img/slide1.png) ;
 	background-repeat: no-repeat;
-	background-position: 430px 10px;
+	background-position: 430px 6px;
   min-height: 420px;
 }
 
@@ -177,7 +178,7 @@ a {
   line-height: 55px;
   font-weight: 500;
   margin-bottom: 27px;
-  padding-top: 70px;
+  padding-top: 65px;
   max-width: 600px;
   margin: 0;
 }
@@ -186,6 +187,7 @@ a {
   color: #283136;
   max-width: 430px;
   margin-bottom: 40px;
+  margin-top: 25px;
 }
 
 .slider-slide a {
@@ -238,7 +240,7 @@ a {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 24%;
+  bottom: 25%;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -276,13 +278,14 @@ a {
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 0;
+  margin-top: 18px;
 }
 
 .content p {
   color: #283136;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 24px;
+  margin-top: 16px;
   width: 250px;
   margin-bottom: 0px;
 }
@@ -349,14 +352,15 @@ a {
   margin-right: auto;
   width: 1160px;
   min-height: 430px;
-  margin-top: 80px;
+  margin-top: 78px;
 	border-bottom:2px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .order-button {
   width: 160px;
-  margin-top: 30px;
-  padding: 15px 0;
+  margin-top: 32px;
+  padding: 13px 0;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -367,7 +371,7 @@ a {
   display: flex;
   width: 1160px;
   padding-top: 40px;
-  margin-bottom: 76px;
+  margin-bottom: 75px;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
@@ -379,8 +383,8 @@ a {
   font-size: 45px;
   line-height: 45px;
   width: 660px;
-  margin-bottom: 35px;
-  padding-top: 40px;
+  margin-bottom: 33px;
+  padding-top: 33px;
 }
 
 
@@ -393,7 +397,7 @@ a {
 
 .about-us-left h3 {
   font-size: 16px;
-  margin-top: 45px;
+  margin-top: 40px;
   font-weight: 700;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -402,12 +406,13 @@ a {
 .service-list {
   margin: 0px;
   list-style: none;
+  padding-left: 35px;
 }
 
 .service-list li {
   color: #283136;
   line-height: 24px;
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
 .service-list li::before {
@@ -447,7 +452,7 @@ th {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 41px;
+  margin-top: 35px;
   margin-bottom: 45px;
   margin-right: 15px;
 }
@@ -544,7 +549,10 @@ sup {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+  margin-top: 22px;
+  max-width: 210px;
 }
+
 /* карта */
 .map {
   display: block;
@@ -575,15 +583,15 @@ sup {
 	min-height: 308px;
 	position: absolute;
 	left: 0;
-	padding-left: 52px;
-	padding-top: 48px;
+	padding-left: 50px;
+	padding-top: 32px;
 	padding-bottom: 40px;
 	bottom: 54px;
 	background-color: #fff;
 }
 
 .footer-contact a {
-  padding: 17px 44px;
+  padding: 17px 45px;
   color: #fff;
   background-color: #fb565a;
   border-radius: 3px;
