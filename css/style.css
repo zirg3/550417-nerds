@@ -79,7 +79,7 @@ body {
 .smallcart {
 	font-weight: 500;
 	margin-left: 105px;
-	padding-top: 27px;
+	padding-top: 25px;
 	position: relative;
 	outline: 0;
 }
@@ -123,6 +123,7 @@ a {
 .site-navigation-current a {
   padding-bottom: 2px;
   border-bottom: 2px solid #fb565a;
+  padding-bottom: 9px;
 }
 
 .smallcart:focus,
@@ -185,7 +186,7 @@ a {
 
 .slider-slide p {
   color: #283136;
-  max-width: 430px;
+  max-width: 410px;
   margin-bottom: 40px;
   margin-top: 25px;
 }
@@ -364,14 +365,16 @@ a {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
+  display: block;
+  font-weight: 500;
 }
 
 .services {
   display: flex;
   width: 1160px;
+  min-height: 90px;
   padding-top: 40px;
-  margin-bottom: 75px;
+  margin-bottom: 71px;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
@@ -427,15 +430,30 @@ a {
 
 .about-us-right{
   display: flex;
+  flex: 0 0 0px;
   flex-direction: column;
   align-items: flex-end;
 }
+
+.about-us-right img{
+  margin-bottom: 35px;
+}
+
+.table-coll{
+  margin-right: 20px;
+}
+
 .table-us{
-  margin-left: 140px;
+  display: table;
 }
 
 .table-us th{
   font-weight: 400;
+}
+
+.table-2{
+  display: block;
+  margin: -27px -30px 0px -2px;
 }
 
 .catalog-position{
@@ -452,8 +470,8 @@ th {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 35px;
-  margin-bottom: 45px;
+  margin-top: 0;
+  margin-bottom: 48px;
   margin-right: 15px;
 }
 
@@ -462,6 +480,8 @@ th {
   font-size: 45px;
   font-weight: 700;
   text-align: left;
+  margin: 0;
+  display: flex;
 }
 
 .about-us-right th {
@@ -549,7 +569,7 @@ sup {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
-  margin-top: 22px;
+  margin-top: 20px;
   max-width: 210px;
 }
 
@@ -591,12 +611,12 @@ sup {
 }
 
 .footer-contact a {
-  padding: 17px 45px;
+  padding: 13px 45px;
   color: #fff;
   background-color: #fb565a;
   border-radius: 3px;
   position: absolute;
-  bottom: 46px;
+  bottom: 47px;
 }
 
 .footer-contact a:focus,
@@ -622,10 +642,10 @@ sup {
 .soc-btn {
 	flex-wrap: wrap;
 	list-style: none;
-	margin-top: 15px;
+	margin-top: 20px;
 	padding: 0;
-	margin-right: 125px;
-	width: 275px;
+	margin-right: 138px;
+	width: 262px;
 }
 
 .social-button,
@@ -645,7 +665,7 @@ sup {
 	display: block;
 	width: 760px;
 	box-sizing: border-box;
-	margin-top: 15px;
+	margin-top: 20px;
 	margin-right: 0;
 }
 
@@ -682,12 +702,14 @@ sup {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+  margin-top: 10px;
+  margin-bottom: 22px;
 }
 
 /* Магазин */
 .page-title {
-  padding-top: 30px;
-  padding-bottom: 110px;
+  padding-top: 65px;
+  padding-bottom: 106px;
   margin-top: 0;
   text-align: center;
   background-color: #eee;
@@ -706,13 +728,6 @@ sup {
 	align-content: center;
   padding-top: 60px;
   margin: auto;
-}
-
-.sorting-box{
-  margin-left: 45px;
-	padding-left: 39px;
-	padding-right: 0;
-	align-items: center;
 }
 
 /* Фильтры */
@@ -747,7 +762,7 @@ sup {
   position: relative;
   height: 41px;
   margin-bottom: 15px;
-  padding-top: 39px;
+  padding-top: 42px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -767,7 +782,7 @@ sup {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 33px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -799,14 +814,14 @@ sup {
 }
 
 .price-controls input {
-  width: 70px;
-  padding: 8px 10px;
+  width: 58px;
+  padding: 10px 10px;
   margin-left: 10px;
   font-size: 16px;
   text-align: center;
   color: #283136;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #f1f1f1;
 }
 
@@ -819,7 +834,7 @@ sup {
 }
 
 .grid legend {
-  padding-top: 47px;
+  padding-top: 57px;
 }
 
 .grid ul {
@@ -832,19 +847,19 @@ sup {
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 48px;
 }
 
 .filter ul {
   list-style: none;
   line-height: 20px;
-  margin-top: -20px;
+  margin-top: -32px;
 }
 .fil2 li{
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .fil li{
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .filter-grids+label::before {
@@ -878,7 +893,7 @@ sup {
 }
 
 .features legend{
-  padding-top: 25px;
+  padding-top: 31px;
 }
 
 .features-1+.features-1::before {
@@ -930,10 +945,10 @@ sup {
   width: 260px;
   background: #eee;
   color: #000;
-  padding: 15px 0;
+  padding: 17px 0;
   text-transform: uppercase;
   border: none;
-  margin-top: 5px;
+  margin-top: 15px;
   font-weight: 500;
   border-radius: 3px;
 }
@@ -961,7 +976,7 @@ sup {
 
 .sorting-box {
   margin-left: 45px;
-	padding-left: 38px;
+	padding-left: 54px;
 	padding-right: 0;
 	align-items: center;
 }
@@ -979,12 +994,14 @@ sup {
 }
 
 .catalog-sort b {
+  margin-top: -5px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .sort-name li {
+  margin-top: -3px;
   list-style: none;
 }
 
@@ -1011,6 +1028,8 @@ sup {
 	list-style: none;
 	padding-left: 0;
   margin: 0px;
+  margin-left: 0;
+  margin-top: -3px;
 }
 
 .sort-name a:focus,
@@ -1077,7 +1096,7 @@ sup {
   padding: 0;
   flex-wrap: wrap;
   min-width: 820px;
-  margin-top: 36px;
+  margin-top: 54px;
 }
 
 .catalog-item img{
@@ -1140,7 +1159,7 @@ sup {
 
 .item-name {
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 5px;
 }
 
 
@@ -1151,6 +1170,7 @@ sup {
   padding: 15px 0;
   text-align: center;
   border-radius: 3px;
+  margin-top: 30px;
 }
 
 .btn-price2{
@@ -1345,4 +1365,23 @@ sup {
   color: #e74246;
   opacity: 1;
   border: 2px solid #e74246;
+}
+.modal-close{
+   background: url(../img/close-cross.svg) no-repeat;
+   width: 22px;
+   height: 22px;
+   border: none;
+   opacity: .4;
+   outline: none;
+   cursor: pointer;
+   position: relative;
+   bottom: 470px;
+   left: 760px;
+}
+.modal-close:focus,
+.modal-close:hover{
+  opacity: 1;
+}
+.modal-close:active{
+  opacity: .2;
 }
