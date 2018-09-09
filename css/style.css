@@ -428,6 +428,11 @@ a {
   margin-top: 12px;
 }
 
+tbody{
+  display: flex;
+  flex-direction: column;
+}
+
 .about-us-right{
   display: flex;
   flex: 0 0 0px;
@@ -440,7 +445,9 @@ a {
 }
 
 .table-coll{
-  margin-right: 20px;
+  margin-right: 11px;
+  margin-bottom: 30px;
+  width: 107px;
 }
 
 .table-us{
@@ -452,8 +459,8 @@ a {
 }
 
 .table-2{
-  display: block;
-  margin: -27px -30px 0px -2px;
+  display: flex;
+  margin: 0;
 }
 
 .catalog-position{
@@ -461,7 +468,7 @@ a {
 }
 
 th {
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .about-us-right p {
@@ -476,7 +483,6 @@ th {
 }
 
 .about-us-right tr:first-child {
-  min-height: 60px;
   font-size: 45px;
   font-weight: 700;
   text-align: left;
@@ -490,10 +496,13 @@ th {
   line-height: 18px;
   vertical-align: top;
   text-align: left;
+  width: 107px;
+  margin-right: 11px;
 }
 
 sup {
-  font-size: 26px;
+  font-size: 25px;
+  top: -15px;
 }
 
 .partners-brand li:not(:nth-child(1))::before{
@@ -592,8 +601,13 @@ sup {
   margin-right: auto;
  }
 
-.maps{
-
+.map iframe{
+  width: 100%;
+  max-width: 1440px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
 }
 
 .footer-contact {
@@ -855,11 +869,13 @@ sup {
   line-height: 20px;
   margin-top: -32px;
 }
+
 .fil2 li{
-  padding-bottom: 5px;
+  padding-bottom: 14.5px;
 }
+
 .fil li{
-  padding-bottom: 7px;
+  padding-bottom: 17.5px;
 }
 
 .filter-grids+label::before {
@@ -872,7 +888,6 @@ sup {
 	opacity: .4;
   margin-right: 8px;
 	margin-left: 2px;
-  padding-bottom: 10px;
 }
 
 .filter-grids:disabled+.filter-grids::before {
@@ -906,7 +921,6 @@ sup {
 	opacity: .4;
 	margin-right: 8px;
 	margin-left: 2px;
-  padding-bottom: 10px;
 }
 
 .features-1+.features-1:hover::before,
@@ -1196,7 +1210,7 @@ sup {
   display: flex;
 }
 
-.pagination-list{
+.pagination-list {
   padding-left: 40px;
 	margin-bottom: 60px;
 	list-style: none;
@@ -1247,6 +1261,11 @@ sup {
 }
 
 /* модальное окошко */
+.modal {
+  position: fixed;
+  display: none;
+}
+
 .modal-message {
 	box-sizing: border-box;
   width: 960px;
@@ -1256,7 +1275,7 @@ sup {
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
 }
 
-.information{
+.information {
   display: flex;
 	justify-content: space-between;
 	margin-top: 35px;
@@ -1264,7 +1283,7 @@ sup {
 }
 
 .info-name,
-.info-email{
+.info-email {
   display: block;
 	margin-top: 0;
 	width: 360px;
@@ -1366,22 +1385,25 @@ sup {
   opacity: 1;
   border: 2px solid #e74246;
 }
+
 .modal-close{
    background: url(../img/close-cross.svg) no-repeat;
-   width: 22px;
-   height: 22px;
+   width: 21px;
+   height: 21px;
    border: none;
-   opacity: .4;
+   opacity: .3;
    outline: none;
    cursor: pointer;
-   position: relative;
-   bottom: 470px;
-   left: 760px;
+   position: absolute;
+   top: 78px;
+   bottom: 90px;
 }
+
 .modal-close:focus,
 .modal-close:hover{
   opacity: 1;
 }
+
 .modal-close:active{
-  opacity: .2;
+  opacity: .1;
 }
