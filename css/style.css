@@ -1264,10 +1264,14 @@ sup {
 .modal {
   position: fixed;
   display: none;
+  background-color: #fff;
+  top:120px;
+  left:20%;
 }
 
 .modal-message {
 	box-sizing: border-box;
+  z-index: 100;
   width: 960px;
   min-height: 590px;
   padding-left: 100px;
@@ -1386,7 +1390,7 @@ sup {
   border: 2px solid #e74246;
 }
 
-.modal-close{
+.modal-close {
    background: url(../img/close-cross.svg) no-repeat;
    width: 21px;
    height: 21px;
@@ -1396,14 +1400,18 @@ sup {
    cursor: pointer;
    position: absolute;
    top: 78px;
-   bottom: 90px;
+   right: 90px;
 }
 
 .modal-close:focus,
-.modal-close:hover{
+.modal-close:hover {
   opacity: 1;
 }
 
-.modal-close:active{
+.modal-close:active {
   opacity: .1;
+}
+
+.modal-show {
+  display: block;
 }
