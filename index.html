@@ -43,7 +43,7 @@
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="button" href="more-info">Узнать больше</a>
         </div>
-        <div class="slider-controls">
+        <div class="slider-controls" aria-label="Переключатель слайдера">
           <input class="visually-hidden" type="radio" id="slide-1" name="slide-button" checked>
           <label class="slider-buttons slide-1 active" for="slide-1"></label>
           <input class="visually-hidden" type="radio" id="slide-2" name="slide-button">
@@ -109,7 +109,7 @@
     <div class="partners">
       <ul class="partners-brand">
         <li>
-          <a class="partners-site " href="#">
+          <a class="partners-site " href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-1.png" width="199" height="68" alt="Партнер">
           </a>
         </li>
@@ -144,7 +144,7 @@
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="button btn-write" href="#">НАПИШИТЕ НАМ</a>
+          <a class="button btn-write" href="writeus.html">НАПИШИТЕ НАМ</a>
           <!-- Обратная форма связи -->
         </div>
       </section>
@@ -179,16 +179,16 @@
       <div class="information">
         <p class="info-name">
           <label for="user-name">Ваше имя:</label>
-          <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+          <input type="text" id="user-name" name="user-name" required placeholder="Имя Фамилия">
         </p>
         <p class="info-email">
           <label for="user-email">Ваш e-mail:</label>
-          <input type="email" id="user-email" name="email" placeholder="email@example.com">
+          <input type="email" id="user-email" name="email" required placeholder="email@example.com">
         </p>
       </div>
       <p class="modal-text">
         <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" rows="6" cols="50" placeholder="В свободной форме"></textarea>
+        <textarea name="message" id="message" rows="6" cols="50" required placeholder="В свободной форме"></textarea>
       </p>
       <button class="modal-button btn-1" type="submit">Отправить</button>
     </form>
